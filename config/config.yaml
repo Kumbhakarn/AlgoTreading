@@ -1,0 +1,15 @@
+data:
+  symbol: 'AAPL'
+  interval: '1m'   # 1-minute data
+  start_date: '2022-01-01'
+  end_date: '2024-01-01'
+
+model:
+  random_state: 42
+  test_size: 0.2
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+
+features:
+  technical_indicators: ['MACD', 'RSI', 'Williams %R']
